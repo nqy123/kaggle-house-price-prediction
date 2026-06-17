@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+
+# Kaggle credentials
+kaggle.json
+access_token
+
+# Raw Kaggle data
+data/train.csv
+data/test.csv
+
+# Intermediate predictions
+outputs/oof_*.csv
+outputs/pred_*.csv
+
+# Keep final result artifacts
+!outputs/oof_best_blend.csv
+!outputs/pred_best_blend.csv
+!outputs/submission_best_blend.csv
+!outputs/experiment_log.csv
+!outputs/experiment_summary.json
+!outputs/best_result_summary.csv

@@ -1,0 +1,76 @@
+{
+  "competition": "house-prices-advanced-regression-techniques",
+  "target": "SalePrice",
+  "metric": "RMSLE",
+  "n_splits": 10,
+  "removed_outliers": 2,
+  "models": {
+    "ridge": {
+      "cv_rmse": 0.11158168640179636,
+      "std_rmse": 0.014042487153046578,
+      "oof_rmse": 0.11247952873825687
+    },
+    "lasso": {
+      "cv_rmse": 0.1104101898833092,
+      "std_rmse": 0.013928549976809966,
+      "oof_rmse": 0.1112990683484098
+    },
+    "elastic": {
+      "cv_rmse": 0.11047634815202226,
+      "std_rmse": 0.013930625662351327,
+      "oof_rmse": 0.11136508077306555
+    },
+    "krr": {
+      "cv_rmse": 0.11740013772840849,
+      "std_rmse": 0.014166685523299109,
+      "oof_rmse": 0.1182710414425374
+    },
+    "gbr": {
+      "cv_rmse": 0.11108434974726462,
+      "std_rmse": 0.014225747454336354,
+      "oof_rmse": 0.11201066767827517
+    },
+    "xgb": {
+      "cv_rmse": 0.11045554176918278,
+      "std_rmse": 0.012138948119464728,
+      "oof_rmse": 0.11112884755970295
+    },
+    "lgbm": {
+      "cv_rmse": 0.11699041557389951,
+      "std_rmse": 0.015616335884266547,
+      "oof_rmse": 0.11804689208548907
+    },
+    "cat": {
+      "cv_rmse": 0.11121731960061867,
+      "std_rmse": 0.01226622899432721,
+      "oof_rmse": 0.11190326239422432
+    }
+  },
+  "blend_models": [
+    "ridge",
+    "lasso",
+    "elastic",
+    "krr",
+    "gbr",
+    "xgb",
+    "lgbm",
+    "cat"
+  ],
+  "blend_weights": {
+    "ridge": 5.160802341031001e-17,
+    "lasso": 0.22672759722064087,
+    "elastic": 0.2054511195863985,
+    "krr": 0.005798538018812407,
+    "gbr": 0.23756607237561628,
+    "xgb": 0.3244566727985321,
+    "lgbm": 0.0,
+    "cat": 0.0
+  },
+  "blend_oof_rmse": 0.1064098909101285,
+  "submission_file": "outputs\\submission_best_blend.csv",
+  "kaggle_public_score": 0.12304,
+  "estimated_rank": 1020,
+  "total_teams": 5096,
+  "estimated_percentile": 0.2002,
+  "top40_pass": true
+}

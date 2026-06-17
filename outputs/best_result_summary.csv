@@ -1,0 +1,16 @@
+item,value
+competition,house-prices-advanced-regression-techniques
+best_model,OOF optimized blend
+target_col,SalePrice
+id_col,Id
+metric,RMSLE
+local_oof_rmse,0.106410
+kaggle_public_score,0.12304
+estimated_rank,1020
+total_teams,5096
+estimated_percentile,0.2002
+top40_pass,True
+submission_file,outputs/submission_best_blend.csv
+oof_file,outputs/oof_best_blend.csv
+pred_file,outputs/pred_best_blend.csv
+notes,多模型 OOF 权重融合；线上 public score 已达到约前 20%

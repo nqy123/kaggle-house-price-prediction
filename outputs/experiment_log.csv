@@ -1,0 +1,2 @@
+experiment_id,model,features,cv_rmse,oof_rmse,std_rmse,kaggle_public_score,estimated_percentile,submission_file,notes
+house_price_best_blend,OOF optimized blend,manual FE + skew correction + one-hot,,0.106410,,0.12304,0.2002,outputs/submission_best_blend.csv,"Ridge/Lasso/ElasticNet/KRR/GBR/XGB/LGBM/CatBoost OOF 权重融合；线上约前 20%，达到前 40% 要求"
